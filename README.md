@@ -10,7 +10,7 @@
 
 - dynamic image layout and hover effect
   that showcases  
-  a uses's prompt to
+  a user's prompt to
   generate AI image, their name and the
   download button
 - search AI image functionality
