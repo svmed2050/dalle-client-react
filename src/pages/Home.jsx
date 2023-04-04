@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import { Card, FormField, Loader } from '../components'
+import { serverUrl } from '../config'
 
 const RenderCards = ({ data, title }) => {
 	if (data?.length > 0) {
@@ -25,15 +26,12 @@ const Home = () => {
 			setLoading(true)
 
 			try {
-				const response = await fetch(
-					'https://grumpy-pink-spacesuit.cyclic.app/api/v1/post',
-					{
-						method: 'GET',
-						headers: {
-							'Content-Type': 'application/json',
-						},
-					}
-				)
+				const response = await fetch(`${serverUrl}/api/v1/post`, {
+					method: 'GET',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+				})
 
 				if (response.ok) {
 					const result = await response.json()
