@@ -9,13 +9,14 @@
 ### Brief description of the project:
 
 - dynamic image layout and hover effect
-  that showcases a uses's prompt to
+  that showcases  
+  a uses's prompt to
   generate AI image, their name and the
   download button
 - search AI image functionality
-- ability to create new AI generated images
+- ability to create new AI generated images  
   by clicking the "surprise me button"
-- entering absolutely any text you can think off
+- entering absolutely any text you can think off  
   to share your post with the community
 
 ===========
